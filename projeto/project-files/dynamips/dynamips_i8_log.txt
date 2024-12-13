@@ -1,10 +1,33 @@
-Dec 13 11:33:53.835 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
-Dec 13 11:33:53.835 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35305.
-Dec 13 11:33:53.843 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 13 11:33:53.843 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips 
-Dec 13 11:33:53.843 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips
-Dec 13 11:33:53.843 HYPERVISOR: exec_cmd: ethsw create Switch4 
-Dec 13 11:34:07.321 HYPERVISOR: exec_cmd: ethsw delete Switch4 
-Dec 13 11:34:07.321 HYPERVISOR: exec_cmd: hypervisor stop 
-Dec 13 11:34:07.357 HYPERVISOR: Stopped.
-Dec 13 11:34:07.357 GENERAL: reset done.
+Dec 13 12:23:43.841 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 13 12:23:43.841 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38793.
+Dec 13 12:23:43.848 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 13 12:23:43.849 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips 
+Dec 13 12:23:43.849 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips
+Dec 13 12:23:43.849 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips/682987f9-6743-44a1-931c-dee5d3781cc3 
+Dec 13 12:23:43.849 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips/682987f9-6743-44a1-931c-dee5d3781cc3
+Dec 13 12:23:43.849 HYPERVISOR: exec_cmd: vm create Router2 5 c7200 
+Dec 13 12:23:43.849 VM: VM Router2 created.
+Dec 13 12:23:43.849 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5021 
+Dec 13 12:23:43.849 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router2 
+Dec 13 12:23:43.850 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.850 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-FE 
+Dec 13 12:23:43.850 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Dec 13 12:23:43.850 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.850 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x60608040 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router2 ca05.25d2.0000 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: vm set_nvram Router2 512 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: vm set_ram Router2 512 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.851 HYPERVISOR: exec_cmd: vm slot_remove_binding Router2 0 0 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-2FE 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 PA-2FE-TX 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.852 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 2 0 PA-2FE-TX 
+Dec 13 12:23:45.765 HYPERVISOR: exec_cmd: nio create_udp udp-c1da5a1d-b7f7-446c-9340-c6a96259a21a 10060 127.0.0.1 10061 
+Dec 13 12:23:45.971 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-c1da5a1d-b7f7-446c-9340-c6a96259a21a 
+Dec 13 12:23:45.971 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:28:56.001 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Dec 13 12:28:59.278 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 

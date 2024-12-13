@@ -1,35 +1,12 @@
-Dec 13 11:37:53.519 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
-Dec 13 11:37:53.519 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50943.
-Dec 13 11:37:53.528 HYPERVISOR: exec_cmd: hypervisor version 
-Dec 13 11:37:53.528 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips 
-Dec 13 11:37:53.528 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips
-Dec 13 11:37:53.528 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips/682987f9-6743-44a1-931c-dee5d3781cc3 
-Dec 13 11:37:53.528 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips/682987f9-6743-44a1-931c-dee5d3781cc3
-Dec 13 11:37:53.528 HYPERVISOR: exec_cmd: vm create R1 5 c7200 
-Dec 13 11:37:53.528 VM: VM R1 created.
-Dec 13 11:37:53.529 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5021 
-Dec 13 11:37:53.529 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
-Dec 13 11:37:53.529 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.529 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
-Dec 13 11:37:53.529 HYPERVISOR: exec_cmd: vm set_ios R1 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm set_ram R1 512 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
-Dec 13 11:37:53.530 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm get_status R1 
-Dec 13 11:37:53.531 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
-Dec 13 11:37:53.588 HYPERVISOR: exec_cmd: vm set_ios R1 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Dec 13 11:37:58.630 HYPERVISOR: exec_cmd: vm set_ios R1 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Dec 13 11:37:58.631 HYPERVISOR: exec_cmd: vm rename R1 Router2 
-Dec 13 11:37:58.685 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Dec 13 11:38:06.940 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/rodrigo/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Dec 13 11:38:12.724 HYPERVISOR: exec_cmd: nio create_udp udp-20e0b46e-0930-40d0-a125-871153df5666 10060 127.0.0.1 10061 
-Dec 13 11:38:12.932 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-20e0b46e-0930-40d0-a125-871153df5666 
-Dec 13 11:38:12.932 HYPERVISOR: exec_cmd: vm get_status Router2 
+Dec 13 12:23:43.867 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 13 12:23:43.867 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35817.
+Dec 13 12:23:43.875 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 13 12:23:43.875 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips 
+Dec 13 12:23:43.875 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/Projeto-RS/projeto/project-files/dynamips
+Dec 13 12:23:43.875 HYPERVISOR: exec_cmd: ethsw create SwitchDMZ 
+Dec 13 12:23:46.020 HYPERVISOR: exec_cmd: nio create_udp udp-3138d8a1-46b2-418d-b0a8-8edea5deab5b 10063 127.0.0.1 10062 
+Dec 13 12:23:46.021 HYPERVISOR: exec_cmd: ethsw add_nio SwitchDMZ udp-3138d8a1-46b2-418d-b0a8-8edea5deab5b 
+Dec 13 12:23:46.034 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDMZ udp-3138d8a1-46b2-418d-b0a8-8edea5deab5b 1 
+Dec 13 12:23:46.129 HYPERVISOR: exec_cmd: nio create_udp udp-1ffb4d1d-362d-4754-be9c-dfefb482c4a6 10068 127.0.0.1 10069 
+Dec 13 12:23:46.129 HYPERVISOR: exec_cmd: ethsw add_nio SwitchDMZ udp-1ffb4d1d-362d-4754-be9c-dfefb482c4a6 
+Dec 13 12:23:46.134 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDMZ udp-1ffb4d1d-362d-4754-be9c-dfefb482c4a6 1 

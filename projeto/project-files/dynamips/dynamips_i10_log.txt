@@ -18,3 +18,7 @@ Dec 13 12:10:44.696 HYPERVISOR: exec_cmd: nio delete udp-c9f545c5-4c81-4d1b-9288
 Dec 13 12:10:50.258 HYPERVISOR: exec_cmd: nio create_udp udp-1927414d-242b-48b1-aa11-528933bdedcb 10064 127.0.0.1 10065 
 Dec 13 12:10:50.258 HYPERVISOR: exec_cmd: ethsw add_nio SwitchDMZ udp-1927414d-242b-48b1-aa11-528933bdedcb 
 Dec 13 12:10:50.266 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDMZ udp-1927414d-242b-48b1-aa11-528933bdedcb 1 
+Dec 13 12:23:20.980 HYPERVISOR: exec_cmd: ethsw delete SwitchDMZ 
+Dec 13 12:23:21.011 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 13 12:23:21.364 HYPERVISOR: Stopped.
+Dec 13 12:23:21.364 GENERAL: reset done.
