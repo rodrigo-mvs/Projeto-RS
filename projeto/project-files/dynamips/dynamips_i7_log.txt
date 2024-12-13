@@ -1,0 +1,22 @@
+Dec 13 11:31:40.456 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 13 11:31:40.456 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47015.
+Dec 13 11:31:40.464 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 13 11:31:40.464 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips 
+Dec 13 11:31:40.464 GENERAL: working_dir=/home/rodrigo/Desktop/Uni-21/RS/Pratica/projeto/project-files/dynamips
+Dec 13 11:31:40.464 HYPERVISOR: exec_cmd: ethsw create Switch3 
+Dec 13 11:31:42.029 HYPERVISOR: exec_cmd: nio create_udp udp-1fc5e902-3c8c-4739-8319-fe36f378b566 10046 127.0.0.1 10047 
+Dec 13 11:31:42.029 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-1fc5e902-3c8c-4739-8319-fe36f378b566 
+Dec 13 11:31:42.043 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-1fc5e902-3c8c-4739-8319-fe36f378b566 1 
+Dec 13 11:31:42.087 HYPERVISOR: exec_cmd: nio create_udp udp-3a879e9a-b4f1-4e6c-a95b-2db466469407 10050 127.0.0.1 10051 
+Dec 13 11:31:42.087 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-3a879e9a-b4f1-4e6c-a95b-2db466469407 
+Dec 13 11:31:42.103 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-3a879e9a-b4f1-4e6c-a95b-2db466469407 1 
+Dec 13 11:31:42.148 HYPERVISOR: exec_cmd: nio create_udp udp-22cb5974-4b33-47b8-99e0-a8413b178af1 10054 127.0.0.1 10055 
+Dec 13 11:31:42.148 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-22cb5974-4b33-47b8-99e0-a8413b178af1 
+Dec 13 11:31:42.164 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-22cb5974-4b33-47b8-99e0-a8413b178af1 1 
+Dec 13 12:10:16.575 HYPERVISOR: exec_cmd: ethsw rename Switch3 SwitchDC 
+Dec 13 12:10:16.576 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-1fc5e902-3c8c-4739-8319-fe36f378b566 1 
+Dec 13 12:10:16.576 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-3a879e9a-b4f1-4e6c-a95b-2db466469407 1 
+Dec 13 12:10:16.576 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-22cb5974-4b33-47b8-99e0-a8413b178af1 1 
+Dec 13 12:10:16.625 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-1fc5e902-3c8c-4739-8319-fe36f378b566 1 
+Dec 13 12:10:16.625 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-3a879e9a-b4f1-4e6c-a95b-2db466469407 1 
+Dec 13 12:10:16.625 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchDC udp-22cb5974-4b33-47b8-99e0-a8413b178af1 1 
