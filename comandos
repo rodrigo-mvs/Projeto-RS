@@ -2,7 +2,7 @@
 conf t
 int f0/0
 ip address 210.10.10.253 255.255.255.252 
-ipv6 address 2100:A::253/64
+ipv6 address 2100:A:A::253/64
 no shut
 exit
 
@@ -11,32 +11,96 @@ ip address 194.4.4.1 255.255.254.0
 no shut
 exit
 
+
+
+
+
 ## PC7
 ip 194.4.4.2 255.255.254.0 194.4.4.1
 
+
+
+
+
 ## Router 1
 conf t
+
 int f0/0
 ip address 210.10.10.254 255.255.255.252 
-ipv6 address 2100:A::254/64
+ipv6 address 2100:A:A::254/64
 no shut
 exit
 
 int f0/1
 ip address 10.10.5.1 255.255.255.0
-ipv6 address 2200:0:0:04::1/64
+ip address 195.5.5.31 255.255.255.128 secondary
+ipv6 address 2200:0:0:05::1/64
+no shut
+exit
+
+int f1/0
+ip address 10.10.7.7 255.255.255.0
+ipv6 address 2200:0:0:07::7/64
+no shut
+exit
+
+int f1/1
+ip address 10.10.8.7 255.255.255.0
+ipv6 address 2200:0:0:08::7/64
 no shut
 exit
 
 
+
+
+
 ## PCDMZ_Private
-ip 10.10.5.33 255.255.255.0 10.10.5.1/24
-ip 2200:0:0:04::33/64
+ip 10.10.5.32 255.255.255.0 10.10.5.1/24
+ip 2200:0:0:05::32/64
+
+
+
+
 
 ## PCDMZ_Public
-ip 10.10.5.32 255.255.255.0 10.10.5.1/24
-ip 2200:0:0:04::32/64
+ip 195.5.5.33 255.255.255.128 195.5.5.31/25
+ip 2200:0:0:05::33/64
 
+
+
+
+
+## SWL3A
+conf t
+
+int f0/0
+ip address 10.10.7.8 255.255.255.0
+ipv6 address 2200:0:0:07::8/64
+
+
+
+
+
+## SWL3B 
+conf t
+
+int f0/0
+ip address 10.10.8.8 255.255.255.0
+ipv6 address 2200:0:0:08::8/64
+
+
+
+
+
+
+
+
+
+
+
+
+############## METER IPS NOS PCS DO DATACENTER , MANAGEMENT, ENGENEERING E VOIP
+############## SWL3B PARA OLD BUILDING
 
 
 

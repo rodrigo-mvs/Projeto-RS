@@ -1,9 +1,3 @@
-# This the configuration for PCDMZ_Private
-#
-# Uncomment the following line to enable DHCP
-# dhcp
-# or the line below to manually setup an IP address and subnet mask
-# ip 192.168.1.1 255.0.0.0
-#
-
-set pcname PCDMZ_Private
+set pcname VPCS
+ip 10.10.5.32 10.10.5.1 24
+ip 2200:0:0:5::32/64

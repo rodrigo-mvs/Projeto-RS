@@ -1,4 +1,4 @@
-# This the configuration for PC5
+# This the configuration for PCVOIP_Public
 #
 # Uncomment the following line to enable DHCP
 # dhcp
@@ -6,4 +6,4 @@
 # ip 192.168.1.1 255.0.0.0
 #
 
-set pcname PC5
+set pcname PCVOIP_Public
