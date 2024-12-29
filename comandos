@@ -1,0 +1,63 @@
+## Router A
+conf t
+int f0/0
+ip address 210.10.10.253 255.255.255.252 
+ipv6 address 2100:A::253/64
+no shut
+exit
+
+int f0/1
+ip address 194.4.4.1 255.255.254.0 
+no shut
+exit
+
+## PC7
+ip 194.4.4.2 255.255.254.0 194.4.4.1
+
+## Router 1
+conf t
+int f0/0
+ip address 210.10.10.254 255.255.255.252 
+ipv6 address 2100:A::254/64
+no shut
+exit
+
+int f0/1
+ip address 10.10.5.1 255.255.255.0
+ipv6 address 2200:0:0:04::1/64
+no shut
+exit
+
+
+## PCDMZ_Private
+ip 10.10.5.33 255.255.255.0 10.10.5.1/24
+ip 2200:0:0:04::33/64
+
+## PCDMZ_Public
+ip 10.10.5.32 255.255.255.0 10.10.5.1/24
+ip 2200:0:0:04::32/64
+
+
+
+
+
+
+
+
+
+
+
+
+### Masks
+List of masks, depending on the sub-network:
+
+/30  - 255.255.255.252   - 2 usable IPs
+/29  - 255.255.255.248   - 6 usable IPs
+/28  - 255.255.255.240   - 14 usable IPs
+/27  - 255.255.255.224   - 30 usable IPs
+/26  - 255.255.255.192   - 62 usable IPs
+/25  - 255.255.255.128   - 126 usable IPs
+/24  - 255.255.255.0     - 254 usable IPs
+/23  - 255.255.254.0     - 510 usable IPs
+/22  - 255.255.252.0     - 1022 usable IPs
+/21  - 255.255.248.0     - 2046 usable IPs

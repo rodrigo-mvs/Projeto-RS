@@ -1,4 +1,4 @@
-# This the configuration for PCDMZ_Private
+# This the configuration for PC_OB_Private
 #
 # Uncomment the following line to enable DHCP
 # dhcp
@@ -6,4 +6,4 @@
 # ip 192.168.1.1 255.0.0.0
 #
 
-set pcname PCDMZ_Private
+set pcname PC_OB_Private
