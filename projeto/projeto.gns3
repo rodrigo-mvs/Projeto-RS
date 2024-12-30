@@ -349,6 +349,15 @@
                 "x": 213,
                 "y": -8,
                 "z": 2
+            },
+            {
+                "drawing_id": "1830613a-9796-467f-a1f6-11c8bdb26670",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"175\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">[195.5.5.80 195.5.5.87 NAT]</text></svg>",
+                "x": -120,
+                "y": -508,
+                "z": 2
             }
         ],
         "links": [
@@ -427,8 +436,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/1",
-                            "x": 152,
-                            "y": 74
+                            "x": 85,
+                            "y": 29
                         },
                         "node_id": "360a36d6-dcb0-4bd0-b626-6280e9a24591",
                         "port_number": 1
@@ -439,8 +448,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f0/0",
-                            "x": -317,
-                            "y": -297
+                            "x": -322,
+                            "y": -317
                         },
                         "node_id": "d4d34a5b-e297-4023-9bba-24570b4814cc",
                         "port_number": 0
@@ -2267,5 +2276,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.49",
-    "zoom": 60
+    "zoom": 42
 }

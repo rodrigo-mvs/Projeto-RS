@@ -151,6 +151,35 @@ ip 2200:0:0:04::41/64
 
 
 
+$$ 
+$$ CONFIGURE NAT
+
+## Router 1
+
+int f0/0
+ip nat outside
+int f0/1
+ip nat inside
+int f1/0
+ip nat inside
+int f1/1
+ip nat inside
+
+NATPOOL 195.5.5.80 195.5.5.87 netmask 255.255.255.248
+ip nat inside source list 2 pool NATPOOL overload
+access-list 2 permit 10.10.0.0 0.0.255.255
+
+
+
+
+
+
+
+
+
+
+
+
 
 ############## FALTA DATACENTER E OLD BUILDING
 
